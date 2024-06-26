@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="/home/rey/Documentos/subir g2bc/KingFungi/static/img/logoW.png" alt="Bot logo"></a>
+ <img width=200px height=200px src="https://github.com/G2BC/KingFungi/tree/master/static/img/logoW.pn" alt="Bot logo"></a>
 </p>
 
 <h3 align="center">Aplicação WEB: <i>KingFungi</i></h3>
