@@ -20,7 +20,7 @@ from services.genbank_service import download_fasta_sequence_by_id
 from services.genbank_create_id import generate_fungi_by_name
 from services.analiser_results_mymetal import tranformation_results
 from services.create_results import create_result
-from kingfungi.services.deeptmhmm import processDeep
+from services.deeptmhmm import processDeep
 from config.run_commands import *
 import time  
 
