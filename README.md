@@ -3,15 +3,15 @@
  <img width=200px height=200px src="static/img/logoW.png" alt="Bot logo"></a>
 </p>
 
-<h3 align="center">Aplicação WEB: <i>KingFungi</i></h3>
+<h3 align="center"> 🍄 Aplicação WEB: <i>KingFungi </i>🍄</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Platform](https://img.shields.io/badge/platform-reddit-orange.svg)](https://www.reddit.com/user/Wordbook_Bot)
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+![Badge](https://img.shields.io/static/v1?label=status&message=ativo&color=green&style=for-the-badge&logo=status)
+![Badge](https://img.shields.io/static/v1?label=Python&message=latest&color=blue&style=for-the-badge&logo=python)
+![Badge](https://img.shields.io/static/v1?label=Celery&message=latest&color=3486&style=for-the-badge&logo=celery)
+![Badge](https://img.shields.io/static/v1?label=Rabbit&message=latest&color=f60&style=for-the-badge&logo=rabbitmq)
+![Badge](https://img.shields.io/static/v1?label=Docker&message=latest&color=0E76BD&style=for-the-badge&logo=docker)
 
 </div>
 
@@ -25,11 +25,11 @@
 
 - [Sobre ](#about)
 - [Exemplo de fasta](#demo)
-- [Sofwares](#working)
-- [Configurações](#usage)
-- [Instruções](#getting_started)
-- [Execução](#deployment)
+- [Sofwares](#soft)
+- [Configurações](#config)
+- [Execução](#exec)
 - [Autores](#authors)
+- [Monografia](#monografia)
 - [Referências](#acknowledgement)
 
 ## 🧐 Sobre <a name = "about"></a>
@@ -39,12 +39,12 @@ O <strong> KingFungi</strong>   é uma Aplicação Web desenvolvida pelo discent
 
  <img width=1000px height=270px src="static/img/fasta.png" alt="Bot logo"></a>
 
-## 💭 Sofwares  <a name = "working"></a>
+## 👨🏽‍💻 Sofwares  <a name = "soft"></a>
 
 
 **Software 1 :**
 
-O DeepTMHMM é um algoritmo inovador baseado em aprendizado profundo e modelo de linguagem de proteínas, que oferece uma precisão sem precedentes na detecção e previsão da topologia de proteínas transmembranares, tanto hélices alfa quanto barris beta, em todos os domínios da vida.
+O DeepTMHMM é um algoritmo inovador baseado em aprendizado profundo e modelo de linguagem de proteínas, que oferece uma precisão sem precedentes na detecção e previsão da topologia de proteínas transmembranares.
 
 **Disponível em:** https://dtu.biolib.com/DeepTMHMM
 
@@ -70,7 +70,7 @@ docker pull rey4ssis/mymetal:1.5
 
 Esses são utilizados para implementar um pipeline que funcionará na aplicação web e foram criado imagens Docker para ambos os software.
 
-##  Configurações <a name = "usage"></a>
+## ⚙️ Configurações <a name = "config"></a>
 
 O <strong> KingFungi</strong> foi desenvolvido utilizando Python 3.10.12 em um sistema operacional Ubuntu 22.04 64bits. Para o gerenciamento das requisições, utilizamos o Celery, que permite a execução assíncrona e escalável de tarefas em segundo plano. O RabbitMQ atua como sistema de mensagens, facilitando a comunicação eficiente e confiável entre os serviços e o Celery.
 
@@ -79,8 +79,8 @@ O arquivo <strong>requirements.txt</strong> possui todas as bibliotecas necessá
 ```
 pip install -r requirements.txt
 ```
+<sup>**Atenção: Certitique-se de checkar se realizou o pull do requirements.txt**</sup>
 
-**Atenção: Certitique-se de checkar se realizou o pull do requirements.txt**
 
 A instalação do Mebipred (Mymetal) foi identificado um problema na instalação do software, de como que a instalação via pip, não será possível, baixamos 
 mymetal-1.0.9.tar.gz, disponível no Pypi e solucionamos o problema, dito isso, para instalar o software navegue até pasta **mymetal**
@@ -93,78 +93,70 @@ Execute o comando:
 ```
 pip install .
 ```
+----
+### Docker:
 
-### Example:
-
-> !dict what is love
-
-**Definition:**
-
-Baby, dont hurt me~
-Dont hurt me~ no more.
-
-**Example:**
-
-Dude1: Bruh, what is love?
-Dude2: Baby, dont hurt me, dont hurt me- no more!
-Dude1: dafuq?
-
-**Source:** https://www.urbandictionary.com/define.php?term=what%20is%20love
-
----
-
-<sup>Beep boop. I am a bot. If there are any issues, contact my [Master](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/Wordbook_Bot)</sup>
-
-<sup>Want to make a similar reddit bot? Check out: [GitHub](https://github.com/kylelobo/Reddit-Bot)</sup>
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
+Para utilizar o <strong>KingFungi</strong> você terá que ter instaldo o sistema de conteinerização Docker. Para instala-lo execute os comando a baixo:
 
 ```
-Give examples
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+Instalar a versão mais recente:
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+Verificar seu funcionamento:
+```
+sudo docker run hello-world
+```
+----
+### RabbitMQ:
+Além disso, para utilizar o software você terá que ter instalado o RabbitMQ. Você pode instalar de forma local no seu sistema operacional, seguindo o tutorial disponível em: https://www.rabbitmq.com/docs/install-debian ou utiliza-lo através da imagem Docker disponível no Dockerhub, com o comando abaixo: 
+
+```
+docker pull rabbitmq:latest
 ```
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
 
+## 🏁 Execução <a name = "exec"></a>
+
+Para executar a aplicação você está que segui exatamente os passos a segui:
+
+- Inicie o RabbitMQ. Se optou por utilizar a imagem Docker, execute o comando abaixo:
 ```
-Give the example
+docker run rabbitmq:latest
 ```
-
-And repeat
-
+- Agora deve iniciar o Celery:
 ```
-until finished
+celery -A config.celery_config  worker --loglevel=info
 ```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🚀 Deploying your own bot <a name = "deployment"></a>
-
-To see an example project on how to deploy your bot, please see my own configuration:
-
-- **Heroku**: https://github.com/kylelobo/Reddit-Bot#deploying_the_bot
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [PRAW](https://praw.readthedocs.io/en/latest/) - Python Reddit API Wrapper
-- [Heroku](https://www.heroku.com/) - SaaS hosting platform
+E finalmente executar a aplicação:
+```
+python3 app.py
+```
 
 ## ✍️ Autor <a name = "authors"></a>
 
-- [@rey4ssis](https://github.com/rey4ssis)- Rey Assis
+- [@rey4ssis](https://github.com/rey4ssis) - Reinilson Bispo 
 - [@G2BC](https://github.com/G2BC/KingFungi) - Grupo de Pesquisa em Bioinformática e Biologia Computacional
 
+## Monografia <a name="monografia"></a>
 
-## 🎉 Referências <a name = "acknowledgement"></a>
+## 📖 Referências <a name = "acknowledgement"></a>
 
 - **Artigo:** https://www.biorxiv.org/content/10.1101/2022.04.08.487609v1
 - **Artigo:** https://academic.oup.com/bioinformatics/article/38/14/3532/6594112?login=false
