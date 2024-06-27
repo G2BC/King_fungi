@@ -12,7 +12,6 @@
 ![Badge](https://img.shields.io/static/v1?label=Celery&message=latest&color=3486&style=for-the-badge&logo=celery)
 ![Badge](https://img.shields.io/static/v1?label=Rabbit&message=latest&color=f60&style=for-the-badge&logo=rabbitmq)
 ![Badge](https://img.shields.io/static/v1?label=Docker&message=latest&color=0E76BD&style=for-the-badge&logo=docker)
-
 </div>
 
 ---
@@ -38,6 +37,8 @@ O <strong> KingFungi</strong>   é uma Aplicação Web desenvolvida pelo discent
 ## Exemplo de arquivo .fasta <a name = "demo"></a>
 
  <img width=1000px height=280px src="static/img/fasta.png" alt="Bot logo"></a>
+
+
 
 ## 👨🏽‍💻 Sofwares  <a name = "soft"></a>
 
@@ -136,6 +137,10 @@ docker pull rabbitmq:latest
 
 Para executar a aplicação você está que segui exatamente os passos a segui:
 
+- Inclua as configurações necessárias no arquivo exemplo das variavéis de ambiente <a href=".env example">.env example</a>.
+
+ - Apague o "example" e deixando apenas ".env"
+
 - Inicie o RabbitMQ. Se optou por utilizar a imagem Docker, execute o comando abaixo:
 ```
 docker run rabbitmq:latest
@@ -155,7 +160,9 @@ python3 app.py
 - [@G2BC](https://github.com/G2BC/KingFungi) - Grupo de Pesquisa em Bioinformática e Biologia Computacional
 
 ## Monografia <a name="monografia"></a>
-
+Tema: KINGFUNGI : UM PIPELINE PARA PROSPECÇÃO DE COGUMELOS
+COM CAPACIDADE DE ACÚMULO DE MICRONUTRIENTES
+<a href="">Clique aqui para conferir</a>
 ## 📖 Referências <a name = "acknowledgement"></a>
 
 - **Artigo:** https://www.biorxiv.org/content/10.1101/2022.04.08.487609v1
