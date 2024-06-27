@@ -1,12 +1,12 @@
-BROKER_URL = 'amqp://localhost//'
-CELERY_RESULT_BACKEND = 'rpc://'
+BROKER_URL = ''
+CELERY_RESULT_BACKEND = ''
 DIR_CENT = ''
 
-#Autentição e-mail
+#E-mail e senha necessários para autenficação. 
 EMAIL_ADDRESS = ''
 EMAIL_PASSWORD = ''
 
 
 
-#Download genoma 
+#E-mail cadastrado no NCBI para Download genoma 
 EMAIL_ENTREZ = ''
