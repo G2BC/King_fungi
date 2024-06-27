@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 **Atenção: Certitique-se de checkar se realizou o pull do requirements.txt**
 
-A instalação do Mebipred(Mymetal) foi identificado um problema na instalação do software, de como que a instalação via pip, não será possível, baixamos 
+A instalação do Mebipred (Mymetal) foi identificado um problema na instalação do software, de como que a instalação via pip, não será possível, baixamos 
 mymetal-1.0.9.tar.gz, disponível no Pypi e solucionamos o problema, dito isso, para instalar o software navegue até pasta **mymetal**
 
 ```
