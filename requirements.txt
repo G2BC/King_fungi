@@ -90,7 +90,6 @@ ml-dtypes==0.3.2
 monotonic==1.6
 more-itertools==8.10.0
 multidict==6.0.5
-mymetal @ file:///home/rey/Documentos/dockermymetal/mymetal
 namex==0.0.7
 netifaces==0.11.0
 numpy==1.26.4

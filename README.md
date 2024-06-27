@@ -48,34 +48,51 @@ O DeepTMHMM é um algoritmo inovador baseado em aprendizado profundo e modelo de
 
 **Disponível em:** https://dtu.biolib.com/DeepTMHMM
 
-
+**Imagem Docker:** 
+```
+docker pull rey4ssis/deeptmhmm:1.0
+```
 
 
 
 **Software 2 :** 
 
-O MeBiPred (Metal Binding Predictor) é uma ferramenta computacional que utiliza aprendizado de máquina para prever o potencial de ligação de metais em proteínas.
+O MeBiPred (Metal Binding Predictor) também conhecido como Mymetal é uma ferramenta computacional que utiliza aprendizado de máquina para prever o potencial de ligação de metais em proteínas.
 
 **Disponível em:** https://pypi.org/project/mymetal/
 
+**Imagem Docker:** 
+```
+docker pull rey4ssis/mymetal:1.5
+```
 
 
 
-Esses são utilizados para implementar um pipeline que funcionará na aplicação web.
+Esses são utilizados para implementar um pipeline que funcionará na aplicação web e foram criado imagens Docker para ambos os software.
 
 ##  Configurações <a name = "usage"></a>
 
-O Kf foi desenvolvido utilizando Python 3.10.12 em um sistema operacional Ubuntu 22.04 64bits. Para o gerenciamento das requisições, utilizamos o Celery, que permite a execução assíncrona e escalável de tarefas em segundo plano. O RabbitMQ atua como sistema de mensagens, facilitando a comunicação eficiente e confiável entre os serviços e o Celery.
+O <strong> KingFungi</strong> foi desenvolvido utilizando Python 3.10.12 em um sistema operacional Ubuntu 22.04 64bits. Para o gerenciamento das requisições, utilizamos o Celery, que permite a execução assíncrona e escalável de tarefas em segundo plano. O RabbitMQ atua como sistema de mensagens, facilitando a comunicação eficiente e confiável entre os serviços e o Celery.
 
-O arquivo <strong>requirements.txt</strong> possui todas as bibliotecas necessárias para a execução do KF, incluindo o Celery. Instale-as utilizando o comando abaixo:
+O arquivo <strong>requirements.txt</strong> possui todas as bibliotecas necessárias para a execução do <strong> KingFungi</strong>, incluindo o Celery. Instale-as utilizando o comando abaixo:
 
 ```
 pip install -r requirements.txt
 ```
 
-The first part, i.e. "!dict" **is not** case sensitive.
+**Atenção: Certitique-se de checkar se realizou o pull do requirements.txt**
 
-The bot will then give you the Oxford Dictionary (or Urban Dictionary; if the word does not exist in the Oxford Dictionary) definition of the word as a comment reply.
+A instalação do Mebipred(Mymetal) foi identificado um problema na instalação do software, de como que a instalação via pip, não será possível, baixamos 
+mymetal-1.0.9.tar.gz, disponível no Pypi e solucionamos o problema, dito isso, para instalar o software navegue até pasta **mymetal**
+
+```
+cd mymetal
+```
+Execute o comando:
+
+```
+pip install .
+```
 
 ### Example:
 
