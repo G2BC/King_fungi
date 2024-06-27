@@ -37,7 +37,7 @@ O <strong> KingFungi</strong>   é uma Aplicação Web desenvolvida pelo discent
 
 ## Exemplo de arquivo .fasta <a name = "demo"></a>
 
- <img width=1000px height=270px src="static/img/fasta.png" alt="Bot logo"></a>
+ <img width=1000px height=280px src="static/img/fasta.png" alt="Bot logo"></a>
 
 ## 👨🏽‍💻 Sofwares  <a name = "soft"></a>
 
