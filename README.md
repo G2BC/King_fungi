@@ -163,6 +163,8 @@ python3 app.py
 Tema: KINGFUNGI : UM PIPELINE PARA PROSPECÇÃO DE COGUMELOS
 COM CAPACIDADE DE ACÚMULO DE MICRONUTRIENTES
 
+Discente: Reinilson bispo
+Orientador: Prof. Dr. Alexandre Rafael Lenz
 <a href="">Clique aqui para conferir</a>
 ## 📖 Referências <a name = "acknowledgement"></a>
 
