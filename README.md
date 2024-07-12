@@ -165,8 +165,8 @@ COM CAPACIDADE DE ACÚMULO DE MICRONUTRIENTES
 
 Discente: Reinilson bispo
 Orientador: Prof. Dr. Alexandre Rafael Lenz
-<a href="">Clique aqui para conferir</a>
-## 📖 Referências <a href= "https://github.com/G2BC/kingfungi/blob/master/monografia/Monografia__Reinilson_Bispo_final.pdf"></a>
+<a href="https://github.com/G2BC/KingFungi">Clique aqui para conferir</a>
+## 📖 Referências 
 
 - **Artigo:** https://www.biorxiv.org/content/10.1101/2022.04.08.487609v1
 - **Artigo:** https://academic.oup.com/bioinformatics/article/38/14/3532/6594112?login=false
