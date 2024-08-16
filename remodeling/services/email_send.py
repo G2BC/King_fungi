@@ -15,8 +15,8 @@ import matplotlib.pyplot as plt
 
 
 # # Configurações de e-mail
-# EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
-# EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
+EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
+EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
 def save_protein_metal_csv(file_path):
     # Carrega o arquivo TSV
