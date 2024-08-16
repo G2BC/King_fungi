@@ -1,14 +1,10 @@
 # Execs MyMetal: Identifies the sequence nutrients
 # input: read a fasta sequence file from input dir
 # output: save a csv file in output dir
-
 from Bio import SeqIO
 import os
-import uuid
 import argparse
 import os
-import shutil
-import zipfile
 import biolib
 from config.celery_config import celery_app
 from billiard import current_process
@@ -34,7 +30,7 @@ def processDeep(fasta_file, input_dir, output_dir) -> str:
         # if os.path.isfile(file_path):
         #     # os.remove(file_path)
     fasta_path = check_input_file(fasta_file, input_dir)
-    deeptmhmm = biolib.load('DTU/DeepTMHMM')
+    deeptmhmm = biolib.load('DTU/DeepTMHMM:1.0.24')
     deeptmhmm_job = deeptmhmm.cli(args=f'--fasta {fasta_path}', machine='local', timeout=10000000000000000000000)
     deeptmhmm_job.save_files(output_dir)
     # print(deeptmhmm_job.list_output_files())
