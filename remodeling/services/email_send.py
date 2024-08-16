@@ -18,9 +18,6 @@ import matplotlib.pyplot as plt
 # EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
 # EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
-EMAIL_ADDRESS = 'kingfungi.uneb@gmail.com'
-EMAIL_PASSWORD = 'upuayjxwpibgpsla'
-
 def save_protein_metal_csv(file_path):
     # Carrega o arquivo TSV
     data = pd.read_csv(file_path, sep='\t', skiprows=3, header=0)
