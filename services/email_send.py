@@ -131,7 +131,7 @@ def send_email(file_path, nome, email):
                         <br>
                         E-mail: <b>kingfungi.uneb@gmail.com</b>
                         <br>
-                        Telefone: <b>(71) 3117-2274</b>
+                        Telefone: <b>(75) 9 8871-2503</b>
                     </p>
                     
                 </div>'
